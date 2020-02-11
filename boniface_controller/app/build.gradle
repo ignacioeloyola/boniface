@@ -116,4 +116,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-ml-vision:24.0.1'
     implementation 'com.google.firebase:firebase-ml-vision-object-detection-model:19.0.3'
     implementation 'com.google.firebase:firebase-analytics:17.2.2'
+
+    // CAMERAVIEW
+    implementation 'com.otaliastudios:cameraview:2.6.1'
 }

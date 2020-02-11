@@ -1,4 +1,4 @@
-package com.ignacioeloyola.bonifacecontroller.ui.component.news
+package com.ignacioeloyola.bonifacecontroller.ui.component.main
 
 import androidx.annotation.StringRes
 import androidx.lifecycle.LiveData
@@ -13,11 +13,7 @@ import com.ignacioeloyola.bonifacecontroller.usecase.errors.ErrorManager
 import com.ignacioeloyola.bonifacecontroller.utils.Event
 import javax.inject.Inject
 
-/**
- * Created by AhmedEltaher on 5/12/2016
- */
-
-class NewsListViewModel @Inject
+class MainViewModel @Inject
 constructor(private val newsDataUseCase: NewsUseCase) : BaseViewModel() {
 
     override val errorManager: ErrorManager

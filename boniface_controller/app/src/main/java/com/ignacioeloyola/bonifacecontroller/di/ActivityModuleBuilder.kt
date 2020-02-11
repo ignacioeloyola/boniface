@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 package com.ignacioeloyola.bonifacecontroller.di
-import com.ignacioeloyola.bonifacecontroller.ui.component.news.NewsListActivity
+import com.ignacioeloyola.bonifacecontroller.ui.component.main.MainActivity
 import com.ignacioeloyola.bonifacecontroller.ui.component.splash.SplashActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -26,7 +26,7 @@ abstract class ActivityModuleBuilder {
     abstract fun contributeSplashActivity(): SplashActivity
 
     @ContributesAndroidInjector
-    abstract fun contributeHomeActivity(): NewsListActivity
+    abstract fun contributeHomeActivity(): MainActivity
 
     //@ContributesAndroidInjector
     //abstract fun contributeDetailsActivity(): DetailsActivity

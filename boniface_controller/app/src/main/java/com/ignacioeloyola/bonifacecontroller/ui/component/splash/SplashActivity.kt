@@ -5,7 +5,7 @@ import android.os.Handler
 import com.ignacioeloyola.bonifacecontroller.R
 import com.ignacioeloyola.bonifacecontroller.ui.ViewModelFactory
 import com.ignacioeloyola.bonifacecontroller.ui.base.BaseActivity
-import com.ignacioeloyola.bonifacecontroller.ui.component.news.NewsListActivity
+import com.ignacioeloyola.bonifacecontroller.ui.component.main.MainActivity
 import com.ignacioeloyola.bonifacecontroller.utils.Constants
 import org.jetbrains.anko.startActivity
 import javax.inject.Inject
@@ -39,7 +39,7 @@ class SplashActivity : BaseActivity(){
 
     private fun navigateToMainScreen() {
         Handler().postDelayed({
-            startActivity<NewsListActivity>()
+            startActivity<MainActivity>()
             finish()
         }, Constants.SPLASH_DELAY.toLong())
     }

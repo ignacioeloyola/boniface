@@ -18,7 +18,7 @@ package com.ignacioeloyola.bonifacecontroller.di
 import androidx.lifecycle.ViewModel
 import com.ignacioeloyola.bonifacecontroller.ui.component.splash.SplashViewModel
 import com.task.di.ViewModelKey
-import com.ignacioeloyola.bonifacecontroller.ui.component.news.NewsListViewModel
+import com.ignacioeloyola.bonifacecontroller.ui.component.main.MainViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -28,8 +28,8 @@ import dagger.multibindings.IntoMap
 abstract class ViewModelModule {
     @Binds
     @IntoMap
-    @ViewModelKey(NewsListViewModel::class)
-    abstract fun bindUserViewModel(viewModel: NewsListViewModel): ViewModel
+    @ViewModelKey(MainViewModel::class)
+    abstract fun bindUserViewModel(viewModel: MainViewModel): ViewModel
 
     @Binds
     @IntoMap
